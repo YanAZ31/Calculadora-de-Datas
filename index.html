@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Datas</title>
+    <!-- Estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Biblioteca de Animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Epilogue:wght@400;700;800&family=Montserrat:wght@600;700&family=Nunito+Sans&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <!-- ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Scripts -->
+    <script src="scripts/moment.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <section class="container radius">
+        <form name="date" id="formDate">
+           <div class="form-organizer">
+                 <div class="inner-container">
+                    <label for="day">DIA</label>
+                    <input type="number" name="day" id="inputDay" placeholder="01" min="1" max="31" required>
+                </div>
+                <div class="inner-container">
+                    <label for="month">MÊS</label>
+                    <input type="number" name="month" id="inputMonth" placeholder="01"  min="1" max="12" required>
+                </div>
+                <div class="inner-container">
+                    <label for="year">ANO</label>
+                    <input type="number" name="year" id="inputYear" placeholder="2000" max=""  required>
+                </div>
+           </div>
+        <div class="organizer-button">
+            
+            <div class="button-container">
+                <div class="line"></div>
+                <button type="submit">
+                      
+                        <i class="fa-sharp fa-solid fa-circle-arrow-down"></i>
+                </button>
+                </form>
+            </div>
+
+        </div>  
+          <section class="result hide ">
+       <div class="container">
+            <div class="alig">
+                <div class="years">
+                    <h2> <i class="pageYear">10</i> anos</h2>
+                </div>
+                <div class="months">
+                    <h2> <i class="pageMonth">6</i> meses</h2>
+                </div>
+                <div class="days">
+                    <h2> <i  class="pageDay">18</i> dias</h2>
+                </div>
+            </div>
+       </div>
+   </section> 
+    </section>
+ 
+</body>
+</html>
