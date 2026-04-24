@@ -50,7 +50,9 @@ document.querySelector("#inputYear").max = currentYear
 console.log(currentYear)
 
 function execute (){
-  
+   
+   document.querySelector(".result").classList.remove('animate__bounceInUp')
+
     const now = moment()
     // Inputs do form
     let selectYear = document.querySelector("#inputYear").value
@@ -71,7 +73,7 @@ function execute (){
     }
 
       // Exibe elementos ocultos após apertar o botão
-    document.querySelector(".result").classList.add("show","animate-bounceInDown","animate__animated")
+   
 
     // Realiza a comparação entre dia, mês e ano com a data atual
     let years = now.diff(previousDate, "years")
@@ -88,12 +90,28 @@ function execute (){
     pageDay.innerHTML = days
 
     // Exibe animação com CSS
-    document.querySelector(".result").classList.add("animate-bounceInDown","animate__animated")
+    // document.querySelector(".result").classList.toggle("animate-bounceInDown")
+     document.querySelector(".result").classList.add("show")
+     document.querySelector(".result").classList.add('animate__bounceInUp')
 
-    console.log("teste")
+  
+    //  Resetando as animações
+     setTimeout(() => {
+ 
+        
+     document.querySelector(".result").classList.remove('animate__bounceInUp')
+        
+}, 3000);
+      
 }
 
 document.querySelector("#formDate").addEventListener("submit", function(e){
     e.preventDefault()
+    // clearAnimation()
     execute()
+
+
+    
 })
+
+
