@@ -1,14 +1,3 @@
-// var currentyDate = new Date()
-// var myBirthday = new Date("04.29.2006")
-// var yearResult = currentyDate.getFullYear() - myBirthday.getFullYear()
-// var mounthResult = currentyDate.getMonth() - myBirthday.getMonth()
-// var dayResult = currentyDate.getDate() - myBirthday.getDate()
-
-
-
-// let days = Math.floor((currentyDate - myBirthday) / (1000 * 60 * 60 * 24))
-// let mounths = Math.floor(days / 31)
-// let years = Math.floor(mounths/12)
 
 
 // Pega o horário atual
@@ -17,24 +6,6 @@ let previousDate = moment("1965-11-15")
 
 
 
-
-// // Corrigindo dias
-// if (previousDate.format("DD") > now.format("DD")){
-//     days = now.format("DD")
-//    // days = days>now.format("DD") ?days = days - now.format("DD"): days = days
-// }
-
-// else{
-//     days = Math.abs(now.format("DD") - previousDate.format("DD"))
-// }
-
-
-
-// if (days > 30 ){
-//     days = days - 30 
-// }
-// days<30 ?months--:months = months;
-// console.log(`${years} anos, ${months} meses e ${days} dias`)
 
 // Seleciona os elementos do HTML
 let pageYear = document.querySelector(".pageYear")
@@ -90,7 +61,6 @@ function execute (){
     pageDay.innerHTML = days
 
     // Exibe animação com CSS
-    // document.querySelector(".result").classList.toggle("animate-bounceInDown")
      document.querySelector(".result").classList.add("show")
      document.querySelector(".result").classList.add('animate__bounceInUp')
 
@@ -113,5 +83,4 @@ document.querySelector("#formDate").addEventListener("submit", function(e){
 
     
 })
-
 

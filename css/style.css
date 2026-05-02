@@ -7,6 +7,10 @@
 :root{
     --container: 65%;
     --primaria: #20b2aa;
+    --primaria-hover: #104745;
+    --branco:#fff;
+    --body-bg:#ecdede;
+    --linecolor:#89a1a0;
 }
 
 .container{
@@ -14,29 +18,25 @@
     justify-content: center;
     margin:  4.8rem auto ;
     width: var(--container);
-    background-color: #fff;
+    background-color: var(--branco);
 }
 
 body{
     overflow-y: hidden;
-    background-color:#ecdede;
+    background-color: var(--body-bg);
 }
 
 body .container{
 
     flex-direction: column;
-    /* border-radius: ; */
-    /* padding: 25px;
-} */
+   
 }
 
 form{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content:center; */
     gap: 20px;
-    /* text-align: center; */
     font-family:'Nunito Sans', sans-serif;
    
 }
@@ -49,10 +49,8 @@ form{
 
 .button-container{
     width: var(--container);
-    /* background-color: aqua; */
     margin: 0 auto;
     align-items: center;
-    /* margin-top: 30px; */
     display: flex;
 
     
@@ -60,13 +58,12 @@ form{
 }
 
 button i:hover{
-    color: #104745;
+    color: var(--primaria-hover);
 }
 
 .radius{
     border-radius: 10px 10px 160px 10px ;
     padding: 30px;
-    /* background-color: #20b2aa; */
 }
 
 
@@ -80,9 +77,6 @@ button{
     background: none;
     border: 0px;
     font-size: 80px;
-    /* position: relative; */
-    /* bottom: 21px; */
-    /* left: 100px; */
     color: var(--primaria);
     cursor: pointer;
     align-items: flex-end;
@@ -94,7 +88,7 @@ button{
 .line{
     height: 1px;
     flex:1;
-    background-color: #89a1a0;
+    background-color: var() ;
 }
 
 label{
@@ -112,7 +106,7 @@ label{
         
 }
 
-h2 i:hover{ color: #104745;
+h2 i:hover{ color: var(--primaria-hover);
             cursor: pointer;
 
 }
@@ -122,7 +116,7 @@ h2 i:hover{ color: #104745;
             justify-content: center;
             margin:  20px auto ;
             width: var(--container);
-            background-color: #fff;
+            background-color: var(--branco);
                      
 }
 
@@ -140,10 +134,6 @@ input{
 
 h2 i {color: var(--primaria);}
 
-/* .align{
-   align-self: flex-start;
-   width: 0 auto;
-} */
 
 .hide{
 
@@ -160,7 +150,6 @@ h2 i {color: var(--primaria);}
     gap:20px;
     margin: 0 auto;
     width: 65%;
-    /* justify-content: flex-end; */
     
 }
 
@@ -170,8 +159,8 @@ input[type="number"] {
 }
 
 input[type="number"]:focus{
-background-color: #20b2aa;
-color: white;
+background-color: var(--primaria);
+color: var(--branco);
 
 }
 
@@ -179,35 +168,18 @@ color: white;
 @media (max-width: 1024px){
 
     .form-organizer{
-    /* display: flex; */
     flex-direction: column;
-    /* gap:20px; */
-    /* margin: 0 auto; */
-    /* width: 65%; */
-    /* justify-content: flex-end; */
+
     
 }
 
-input{
 
-    /* padding: 30px;
-    border: solid 1px #c0c0c0;
-    border-radius: 4px;
-    font-size: 20px;
-    width: 100%;
-    font-family:'Nunito Sans', sans-serif;
-    font-weight: bold;
-} */
-
-}
 
 form{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content:center; */
     gap: 20px;
-    /* text-align: center; */
     font-family:'Nunito Sans', sans-serif;
    
 }
@@ -224,17 +196,14 @@ form{
 
 input[type="number"] {
     width: clamp(200px, 50vw, 70%);
-    /* height: 50px; */
 }
 
 
 
 .button-container{
     width: var(--container);
-    /* background-color: aqua; */
     margin: 0 auto;
     align-items: center;
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
 
@@ -254,16 +223,8 @@ input[type="number"] {
 }
 
 button{
-    /* background: none;
-    border: 0px; */
     font-size: clamp(30px, 10vw, 80px);
-    /* position: relative; */
-    /* bottom: 21px; */
-    /* left: 100px; */
-    /* color: red; */
-    /* cursor: pointer;
-    align-items: flex-end;
-    text-align: right; */
+
 
 
 }
